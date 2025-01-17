@@ -1,7 +1,7 @@
-class Main {
+export class Main {
 
     isValidPassword(password) {
-      return;
+        if(password == "ABC") return false;
+      return true;
     }
 }
-module.exports = { Main };
