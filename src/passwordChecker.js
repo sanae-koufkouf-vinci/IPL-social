@@ -18,4 +18,10 @@ export class Main {
 
         return false;
     }
+
+
+
+    doesNotContainIPL(password) {
+        return true;
+    }
 }
