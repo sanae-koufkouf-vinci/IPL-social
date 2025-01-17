@@ -9,8 +9,6 @@ export class Main {
     }
 
     containsSpecialCaracter(password) {
-        if(password==="ABC!") return true;
-
-        return false;
+        return /[!@#$%^&*(),.?":{}|<>]/.test(password);
     }
 }
