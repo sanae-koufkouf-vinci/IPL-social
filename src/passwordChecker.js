@@ -1,7 +1,7 @@
 export class Main {
 
     isValidPassword(password) {
-        if(password == "ABC") return false;
+        if(password.length<8) return false;
       return true;
     }
 }
