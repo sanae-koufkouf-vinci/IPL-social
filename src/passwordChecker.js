@@ -14,8 +14,8 @@ export class Main {
 
 
     containsNumbers(password) {
-        if(password==="1234ABCD") return true;
-        
+        if(password.match(/[0-9]/)) return true;
+
         return false;
     }
 }
