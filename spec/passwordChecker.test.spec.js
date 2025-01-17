@@ -66,4 +66,9 @@ describe("isValidPassword function should return true if the password is valid a
     });
 
    
+    it("isValidPassword should return true when given a password that meets all criteria", function() {
+        let password = "ValidPass1!";
+        const result = main.isValidPassword(password);
+        expect(result).toBe(true);
+    });
 });

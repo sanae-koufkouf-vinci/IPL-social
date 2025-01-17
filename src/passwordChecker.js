@@ -1,8 +1,18 @@
 export class Main {
 
+    isValidPassword(password) {
+        const hasMinimumLength = this.isValidPasswordLength(password);
+        const hasSpecialCharacter = this.containsSpecialCaracter(password);
+        const hasDigit = this.containsNumbers(password);
+        const doesNotContainIPL = this.doesNotContainIPL(password);
+
+        return hasMinimumLength && hasSpecialCharacter && hasDigit && doesNotContainIPL;
+    }
+
     isValidPasswordLength(password) {
         
         if(password.length<8) return false;
+
       return true;
 
       
