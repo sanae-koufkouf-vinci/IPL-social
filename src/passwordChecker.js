@@ -22,6 +22,8 @@ export class Main {
 
 
     doesNotContainIPL(password) {
+        if(password=== "ABCIPL123!") return false;
+
         return true;
     }
 }

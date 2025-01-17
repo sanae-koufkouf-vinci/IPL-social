@@ -53,5 +53,11 @@ describe("isValidPassword function should return true if the password is valid a
         expect(result).toBe(true);
     });
 
+    it("doesNotContainIPL should return false when given a password containing 'IPL'", function() {
+        let password = "ABCIPL123!";
+        const result = main.doesNotContainIPL(password);
+        expect(result).toBe(false);
+    });
+
    
 });
