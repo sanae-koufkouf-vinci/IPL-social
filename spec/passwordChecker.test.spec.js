@@ -40,5 +40,12 @@ describe("isValidPassword function should return true if the password is valid a
         expect(result).toBe(true);
     });
 
+    it("containsNumbers should return false when given a password without numbers", function() {
+        let password = "ABCD";
+        const result = main.containsNumbers(password);
+        expect(result).toBe(false);
+    });
+    
+
    
 });
