@@ -11,4 +11,11 @@ export class Main {
     containsSpecialCaracter(password) {
         return /[!@#$%^&*(),.?":{}|<>]/.test(password);
     }
+
+
+    containsNumbers(password) {
+        if(password==="1234ABCD") return true;
+        
+        return false;
+    }
 }

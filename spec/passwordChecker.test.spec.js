@@ -27,4 +27,18 @@ describe("isValidPassword function should return true if the password is valid a
         const result = main.containsSpecialCaracter(password);
         expect(result).toBe(true);
     });
+
+    it("containsNumbers should return true when given a password with numbers", function() {
+        let password = "1234ABCD";
+        const result = main.containsNumbers(password);
+        expect(result).toBe(true);
+    });
+
+    it("containsNumbers should return true when given a password with numbers", function() {
+        let password = "1234ABCD";
+        const result = main.containsNumbers(password);
+        expect(result).toBe(true);
+    });
+
+   
 });
